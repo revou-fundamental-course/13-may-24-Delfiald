@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Triangle</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="hero">
+        <h1>Triangle Calculator</h1>
+        <p>Selamat Datang di Triangle Calculator!<br>Sebuah web apps sederhana untuk menghitung luas dan keliling segitiga</p>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#" class="btn" id="btn-luas">Luas Segitiga</a></li>
+          <li><a href="#" class="btn not-active" id="btn-keliling">Keliling Segitiga</a></li>
+        </ul>
+      </nav>
+    </header>
+    <article id="luas">
+      <section class="formula">
+        <div class="head">
+          <h2>Luas Segitiga</h2>
+        </div>
+        <img src="image/segitiga.png" alt="Segitiga">
+        <p>Rumus Luas Segitiga yaitu: </p>
+        <p><strong class="bold">L = 1/2 x a x t</strong></p>
+        <p>Di mana:</p>
+        <p>L = Luas</p>
+        <p>a = Panjang Alas</p>
+        <p>t = Tinggi</p>
+      </section>
+      <section class="calculation">
+        <div class="head">
+          <h2>Hitung Luas Segitiga</h2>
+        </div>
+        <form action="" id="insert-calc">
+          <div class="column">
+            <input type="number" name="alas" id="alas" placeholder="Masukkan Alas" required>
+            <input type="number" name="tinggi" id="tinggi" placeholder="Masukkan Tinggi" required>
+            <div id="result-luas" class="result"></div>
+            <input type="submit" id="hitung-luas" class="btn btn-submit" 
+            value="Submit">
+            <button type="reset" class="btn btn-reset">Reset</button>
+          </div>
+        </form>
+      </section>
+    </article>
+    <article id="keliling">
+      <section class="formula">
+        <div class="head">
+          <h2>Keliling Segitiga</h2>
+        </div>
+        <img src="image/segitiga.png" alt="Segitiga">
+        <p>Rumus Keliling Segitiga yaitu: </p>
+        <p><strong class="bold">K = S1 + S2 + S2</strong></p>
+        <p>Di mana:</p>
+        <p>K = Keliling</p>
+        <p>S1 = Sisi A</p>
+        <p>S2 = Sisi B</p>
+        <p>S3 = Sisi C</p>
+      </section>
+      <section class="calculation">
+        <div class="head">
+          <h2>Hitung Keliling Segitiga</h2>
+        </div>
+        <form action="" id="insert-calc2">
+          <div class="column">
+            <input type="number" name="sisi1" id="sisi1" placeholder="Masukkan Sisi A" required>
+            <input type="number" name="sisi2" id="sisi2" placeholder="Masukkan Sisi B" required>
+            <input type="number" name="sisi3" id="sisi3" placeholder="Masukkan Sisi C" required>
+            <div id="result-keliling" class="result"></div>
+            <input type="submit" id="hitung-keliling" class="btn btn-submit" 
+            value="Submit">
+            <button type="reset" class="btn btn-reset">Reset</button>
+          </div>
+        </form>
+      </section>
+    </article>
+  </div>
+
+  <footer>
+    <p>RevoU Mini-Project by M.Aldi Gunawan 2024</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
